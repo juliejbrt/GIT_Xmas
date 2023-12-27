@@ -10,11 +10,49 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-  </head>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    #hero {
+      height: 500px;
+    }
+
+    @media (min-width: 992px) {
+      #hero {
+        height: 700px;
+      }
+    }
+    .nav-link {
+      color: rgba(240, 255, 255, 0.455) !important;
+    }
+  </style>
+
+  <nav
+    class="navbar navbar-expand-lg navbar-dark shadow-5-strong"
+    style="
+      font-family: 'Amatic SC', sans-serif;
+      font-size: 22px;
+      font-style: italic;
+      position: fixed;
+    "
+  >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a
+        class="navbar-brand"
+        href="#"
+        style="
+          font-family: 'Amatic SC', sans-serif;
+          font-size: 25px;
+          color: black !important;
+        "
+        >Navbar</a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -29,7 +67,9 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            <a class="nav-link" href="#" style="color: azure !important"
+              >HOME</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">SERVICES</a>
@@ -41,14 +81,30 @@
             <a class="nav-link" href="#">CONTACTS</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <button class="btn btn-outline-success" type="submit">
-            BOOK YOUR STAY
-          </button>
-        </form>
       </div>
     </div>
   </nav>
+
+  <div
+    id="hero"
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('img/hero-img.jpg');
+      background-size: cover;
+      background-position: top;
+      margin-top: 0;
+      padding-top: 38% !important;
+    "
+  >
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1>titre</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <body>
     <button><a href="french.html">french</a></button>
     <button><a href="anglais.html">english</a></button>
