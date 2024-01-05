@@ -36,7 +36,22 @@
       }
     }
     .nav-link {
-      color: rgba(240, 255, 255, 0.455) !important;
+      color: rgb(240, 255, 255) !important;
+    }
+    .nav-link:hover {
+      color: yellow !important;
+    }
+    .nav-link:focus {
+      color: yellow !important;
+    }
+
+    .transparent-header {
+      background-color: #ffffff00 !important;
+      transition: 0.3s ease-in-out !important;
+    }
+
+    .blue-header {
+      background-color: #2e7b83 !important;
     }
 
     .carousel-item > img {
@@ -104,13 +119,15 @@
   </style>
 
   <nav
-    class="navbar navbar-expand-lg navbar-dark shadow-5-strong"
+    class="navbar navbar-expand-lg navbar-dark shadow-5-strong transparent-header"
     style="
       font-family: 'Amatic SC', sans-serif;
       font-size: 22px;
       font-style: italic;
       position: fixed;
+      width: 100%;
     "
+    id="header"
   >
     <div class="container-fluid">
       <a
@@ -137,9 +154,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color: azure !important"
-              >HOME</a
-            >
+            <a class="nav-link" href="#">HOME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">SERVICES</a>
@@ -154,6 +169,18 @@
       </div>
     </div>
   </nav>
+  <script>
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("#header");
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > 0) {
+        header.classList.add("blue-header");
+      } else {
+        header.classList.remove("blue-header");
+      }
+    });
+  </script>
   <body>
     <div
       id="hero"
