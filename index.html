@@ -160,7 +160,7 @@
             <a class="nav-link" href="#aboutus">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACTS</a>
+            <a class="nav-link" href="#contact">CONTACTS</a>
           </li>
         </ul>
       </div>
@@ -414,19 +414,68 @@
         background-size: cover;
         background-position: center;
         align-items: center;
+        justify-content: center;
       "
       id="contact"
     >
       <div
-        class="container"
         style="
-          background-color: #ffffffc1;
+          background-color: #000000b4;
           height: 70%;
           width: 65%;
           border-radius: 10px;
+          display: flex !important;
+          justify-content: space-between !important;
+          color: white;
+          padding: 2%;
         "
       >
-        aaa
+        <div>CONTACT US</div>
+        <div>
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First name"
+                aria-label="First name"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Last name"
+                aria-label="Last name"
+              />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Email"
+              />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="8"
+                placeholder="Your message. . ."
+              ></textarea>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary mb-3">Send</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script
